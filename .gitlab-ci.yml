@@ -1,10 +1,12 @@
 image: python:latest
 test:
   script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
     - pip install simplejson
     - pip install pytagcloud
     - pip install pygame
     - pip install html5lib
     - pip install chardet
-    - pip install bs4
+    - pip install beautifulsoup4
     - make test 
