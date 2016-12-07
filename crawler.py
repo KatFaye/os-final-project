@@ -117,7 +117,7 @@ if __name__ == '__main__':
     try:
         opts, args = getopt.getopt(sys.argv[1:], "o:r:hvn:")
     except getopt.GetoptError as err:
-        print err
+        print(err)
         usage()
 
     output_filename = "test.png" #default
