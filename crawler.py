@@ -142,7 +142,6 @@ if __name__ == '__main__':
             usage(1)
     f = open('commonWords.txt')
     common = f.read().split()
-    top = {}
     index = crawlSub(base+subreddit, n)
     #print removeCommon
     for k, v in index.items():
