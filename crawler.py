@@ -1,3 +1,5 @@
+#!/usr/bin/python2.7
+
 import re, getopt, sys
 import operator
 from bs4 import BeautifulSoup, Comment
