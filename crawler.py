@@ -47,10 +47,8 @@ def processPage(page, seed, index):
     else:
         outlinks = []
     return outlinks, index
-    
-    #graph[page] = outlinks
-            
-    print "Crawling ", page, "..."
+
+
 def cleanhtml(raw_html):
   cleanr = re.compile('<.*?>')
   cleantext = re.sub(cleanr, '', raw_html)
