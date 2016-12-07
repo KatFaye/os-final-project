@@ -8,5 +8,5 @@ test:
     - pip install pygame
     - pip install html5lib
     - pip install chardet
-    - pip install bs4
+    - pip install beautifulsoup4
     - make test 
