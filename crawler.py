@@ -2,7 +2,7 @@
 
 import re, getopt, sys
 import operator
-from bs4 import BeautifulSoup, Comment
+from bs4 import BeautifulSoup
 import urllib2
 from collections import Counter
 from pytagcloud import create_tag_image, create_html_data, make_tags, LAYOUT_HORIZONTAL, LAYOUTS, LAYOUT_MIX, LAYOUT_VERTICAL, LAYOUT_MOST_HORIZONTAL, LAYOUT_MOST_VERTICAL
