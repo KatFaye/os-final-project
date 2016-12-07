@@ -16,7 +16,7 @@ def crawlSub(seed, nLinks): # returns index, graph of inlinks
     while len(crawled) < nLinks and tocrawl: 
         page = tocrawl.pop()
         if VERBOSE:
-            print "Crawling "+ page + "..."
+            print("Crawling "+ page + "...")
         if page not in crawled:
             outlinks, index = processPage(page, seed, index)
             #for i in index: #WORKS! :D
