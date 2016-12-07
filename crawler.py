@@ -154,8 +154,7 @@ if __name__ == '__main__':
     sorted_wordscount = sorted(wordscount.iteritems(), key=operator.itemgetter(1),reverse=True)
 
     tags = make_tags(sorted_wordscount[:50], maxsize=100)
-    create_tag_image(tags, 'test.png', size=(1000,1000),  background=(0, 0, 0, 255), layout=LAYOUT_MIX, fontname='Molengo', rectangular=True)
-    #print Counter(index).most_common(10)
+    create_tag_image(tags, output_filename, size=(1000,1000),  background=(0, 0, 0, 255), layout=LAYOUT_MIX, fontname='Molengo', rectangular=True)
 
 
 
