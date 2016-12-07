@@ -1,6 +1,8 @@
 image: python:latest
 test:
   script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
     - pip install simplejson
     - pip install pytagcloud
     - pip install pygame
