@@ -1,4 +1,11 @@
-image: pbui/cse-30331-fa16:1
+image: python:latest
 test:
   script:
+    - pip install simplejson
+    - pip install pytagcloud
+    - pip install pygame
+    - pip install html5lib
+    - pip install chardet
+    - pip install bs4
+    - pip install xml
     - make test 
